@@ -31,18 +31,19 @@ nav:after {
 
 }
 li, a{
-  padding:10px 100px 18px 16px;
+  margin: 16px;
+  /* padding:10px 100px 18px 16px; */
   text-decoration: none;
   font-size: 20px;
   color: black;
   display: block;
 }
-li:hover {
-  background-color:red;
-  color: #fff;
+li a:hover {
+  color:red;
+  /* color: #fff; */
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 
 nav:hover {

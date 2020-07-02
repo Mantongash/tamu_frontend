@@ -6,6 +6,16 @@
 
 
 }
+
+#message {
+  display: none;
+  padding: 5px;
+  background: green;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bolder;
+  text-align: center;
+}
 .my-container {
 
 }
@@ -26,7 +36,7 @@
 
 .container {
   width: 600px;
-  height: 420px;
+  height: 470px;
   position: relative;
   perspective: 800px;
   margin: 3rem auto;
@@ -90,7 +100,8 @@
 #card .back {
   width: 70%;
   background:rgb(225,225,255,0.9);
-  transform: rotateY( 180deg );
+  display: none;
+  /* transform: rotateY( 180deg ); */
 
 }
 
@@ -138,8 +149,47 @@
   cursor: pointer;
 }
 
+#account {
+  background:rgba(255,255,255,.7);
+  padding: 0.5em 0.5em;
+  font-weight: bolder;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+#account a, #no-account a {
+  text-decoration: underline;
+  display: block;
+  
+}
+
+#no-account {
+  background:rgba(255,255,255,.7);
+  padding: 0.5em 0.5em;
+  font-weight: bolder;
+}
+.details {
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  
+}
+
 #flip:hover {
   background:red;
+}
+
+.btns {
+  position: relative;
+}
+.loginBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  
 }
 
 #flip.powered {
@@ -160,9 +210,8 @@
 }
 
 .front .form-side {
-  padding-top: 20px;
-  padding-left: 1rem;
-  width: 40%;
+  padding: 1rem;
+  width: 100%;
   height: 100%;
 }
 
@@ -171,11 +220,17 @@
 
   width: 500px;
   height: 200px;
-  margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+  margin: 0 auto; /* Will not center vertically and won't work in IE6/7. */
   left: 0;
   right: 0;
   height: 100%;
 }
+
+.card {
+  transition: all .5s ease-in;
+}
+
+.
 
 
 .front .photo-side {
@@ -235,9 +290,19 @@ h1{
 }
 
 #message{
+  background: green;
   color:white;
 }
-input[type=text], select {
+
+#error {
+  color: #fff;
+  background: red;
+  padding: 10px;
+  display: none;
+  /* font-weight: bolder; */
+  font-size: 1rem;
+}
+input[type=text], input[type=password],input[type=email] select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -251,28 +316,16 @@ input[type=text], select {
 #message{
   color:white;
 }
-input[type=text], select {
+input[type=text],input[type=password],input[type=email], select {
   width: 100%;
-  padding: 10px 0;
+  padding: 10px;
   font-size: 16px;
-  color: #fff;
+  color: #000;
   margin-bottom: 30px;
   border: none;
   border-bottom: 1px solid #fff;
   outline: none;
   background: transparent;
-}
-input[type=password], select {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid #fff;
-  outline: none;
-  background: transparent;
-  
 }
 
 
@@ -300,17 +353,6 @@ input[type=password], select {
   position: relative;
 }
 
-.login-box .user-box input {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid #fff;
-  outline: none;
-  background: transparent;
-}
 .login-box .user-box label {
   position: absolute;
   top:0;

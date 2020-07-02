@@ -52,7 +52,7 @@ import { AddComponent } from './add/add.component';
     FormsModule,
     BrowserAnimationsModule,
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
